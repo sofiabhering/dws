@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de FIlmes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <header class="container header">
+
+        <div class="row">
+
+            <div class="col-12 header_area">
+                <div class="row">
+                    
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 menu_area">
+                        <nav class=" menu_nav ">
+                    
+                            <input type="checkbox"  id ="menuToggle" class="menuToggle">
+                                <label for="menuToggle" class="bars-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-times-circle"></i>
+                                </label>
+                            <div class="menu_mobile">
+                                <ul class="list_mobile" id="mainList">
+                                    <li><a class="nav-link active bg-transparent text-secondary" href="#">
+                                        <input type="checkbox" class="menuToggle">
+                                        <label for="menuToggle" class="home-icon">
+                                            <i class="fa fa-home"></i>
+                                        </label>
+                                    </a></li>
+                                    <li><a class="nav-link" href="https://www.netflix.com/browser/">NETFLIX</a></li>
+                                    <li><a class="nav-link" href="https://www.primevideo.com/">AMAZON PRIME</a></li>
+                                    <li><a class="nav-link" href="https://www.disneyplus.com/pt-br/welcome?cid=DSS-Search-Google-71700000075038498-&s_kwcid=AL!8468!3!479769813057!e!!g!!disney&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpvIBvWzIhI7Lc_IW8N2yhbcKA64bB2149r49wsxbyOuCVUtPb1-_jQaAhVsEALw_wcB">DISNEY +</a></li>
+                                    <li><a class="nav-link" href="https://globoplay.globo.com/assine/?dclid=&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpvwlOOso4GE0CN7FwnOZZ2AtM0d9fevr-GMdMvZay3NHPnyT34eWcQaAvocEALw_wcB">GLOBOPLAY</a></li>
+
+                                </div>
+                            
+                            <div class="text_menu">
+                                <nav class="nav nav-pills flex-column flex-sm-row">
+                                    <a class="nav-link" href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1&gmb=exp&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp">Subscribe</a>
+                                    <a class="nav-link" href="https://accounts.google.com/ServiceLogin/identifier?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1&flowName=GlifWebSignIn&flowEntry=AddSession">Log In</a>
+                                </nav>
+                            </div>
+                        </nav>
+                    </div>
+                    
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 logo-area">
+                        <img src="images/times2.png" alt="Logo" class="logo">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12  pagination justify-content-center menu_header">
+                        <nav class="nav nav-pills flex-column flex-sm-row menu_header2">
+                            <a class="nav-link active bg-transparent text-secondary" href="#">
+                                <input type="checkbox" class="menuToggle">
+                                <label for="menuToggle" class="home-icon">
+                                    <i class="fa fa-home"></i>
+                                </label>
+                            </a>
+                            <a class="nav-link" href="https://www.netflix.com/browser/">NETFLIX</a>
+                            <a class="nav-link" href="https://www.primevideo.com/">AMAZON PRIME</a>
+                            <a class="nav-link" href="https://www.disneyplus.com/pt-br/welcome?cid=DSS-Search-Google-71700000075038498-&s_kwcid=AL!8468!3!479769813057!e!!g!!disney&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpvIBvWzIhI7Lc_IW8N2yhbcKA64bB2149r49wsxbyOuCVUtPb1-_jQaAhVsEALw_wcB">DISNEY +</a>
+                            <a class="nav-link" href="https://globoplay.globo.com/assine/?dclid=&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpvwlOOso4GE0CN7FwnOZZ2AtM0d9fevr-GMdMvZay3NHPnyT34eWcQaAvocEALw_wcB">GLOBOPLAY</a>
+
+                            
+                            
+                            <input type="text" id="txtPesquisa">
+                            <button id="btnPesquisa">
+                                <input type="checkbox" class="menuToggles">
+                                    <label for="menuToggles" class="search-icon">
+                                        <i class="fa fa-search"></i>
+                                    </label>
+                            </button>
+                            
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="container main">
+
+        <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-8"  id = "exclusive">
+
+                <div class="title">
+                    <h3 class="p-2 mb-2 bg-warning text-dark">
+                        <div class="d-flex justify-content-between">
+                            <button class="nav-link" id="btnPesquisas">
+                                <h3>TOP
+                                    <img src="images/brasil.png" alt="" class="flag_image">
+                                </h3>
+                            </button>
+                            <button class="nav-link" id="k">
+                                <img src="images/usa.png" alt="" class="flag_image">
+                            </button>
+                            <button class="nav-link" id="l">
+                                <img src="images/russia.png" alt="" class="flag_image">
+                            </button>
+                            <button class="nav-link" id="n">
+                                <img src="images/japan.png" alt="" class="flag_image">
+                            </button>
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="justify-content-between search_title1" id="title_men2">
+                    <div class = "col-md-10 search_title2">
+                        <h3 class="p-2 mb-2 bg-dark text-white" id="title_men">News</h3>
+                    </div>
+                    <div class = "col-md-2 search_title1">
+                        <button id="save"><h3>Save</h3></button>
+                    </div>
+                </div>
+
+
+                <div id="tela">
+                    
+                    <div class="card mb-4" style="max-width: 100%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <a href="https://olhardigital.com.br/2020/09/18/noticias/faturamento-da-netflix-no-brasil-deve-ultrapassar-a-globo-em-2022/">
+                                    <img src="images/torcida_do_liverpool.jpg" class="card-img" alt="Torcida do liverpool">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <a href="https://olhardigital.com.br/2020/09/18/noticias/faturamento-da-netflix-no-brasil-deve-ultrapassar-a-globo-em-2022/">
+                                        <h5 class="card-title">A NETFLIX E SEU FATURAMENTO</h5>
+                                        <p class="card-text">O crescimento a passos largos da Netflix como opção de conteúdo via streaming no Brasil pode levá-la a faturar tanto quanto a Globo, enquanto de canal TV aberta, a partir de 2022</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+            
+                    <div class="card mb-4" style="max-width: 100%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <a href="https://tecnoblog.net/244019/amazon-prime-video-vale-a-pena/">
+                                    <img src="images/son.jpg" class="card-img" alt="Son">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <a href="https://tecnoblog.net/244019/amazon-prime-video-vale-a-pena/">
+                                        <h5 class="card-title">AMAZON PRIME E SEU CUSTO BENEFICIO</h5>
+                                        <p class="card-text">O Prime Video faz parte do pacote do Amazon Prime, qual custa R$ 9,90 ao mês. É um valor bem menor que o cobrado pela Netflix, qual tem planos a partir de R$ 19,90.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4" style="max-width: 100%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <a href="https://www.techtudo.com.br/noticias/2019/11/como-funciona-o-globoplay-saiba-valor-da-assinatura-e-programacao.ghtml">
+                                    <img src="images/11.jpg" class="card-img" alt="Torcida do liverpool">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <a href="https://www.techtudo.com.br/noticias/2019/11/como-funciona-o-globoplay-saiba-valor-da-assinatura-e-programacao.ghtml">
+                                        <h5 class="card-title">GLOBOPLAY E TODO CONTEUDO </h5>
+                                        <p class="card-text">Os assinantes do Globoplay têm acesso a todo o conteúdo exibido pela TV Globo, em alguns casos, o conteúdo é liberado um dia ou uma semana antes da exibição na televisão.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4" style="max-width: 100%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <a href="https://www.istoedinheiro.com.br/disney-esta-produzindo-15-series-exclusivas-no-brasil/">
+                                    <img src="images/barcelona.jpg" class="card-img" alt="Barcelona Fc">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <a href="https://www.istoedinheiro.com.br/disney-esta-produzindo-15-series-exclusivas-no-brasil/">
+                                        <h5 class="card-title">DISNEY + E SERIES EXCLUSIVAS</h5>
+                                        <p class="card-text">A Disney anunciou uma lista de séries e documentários exclusivos para o Disney+, todas produzidas no América Latina, e 15 delas são brasileiras.
+                                        dirigentes</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                           
+            
+                </div>
+
+
+
+
+
+            </div>
+                    
+        
+                
+            <div class="col-12 col-sm-12 col-md-4"  id = "news">
+
+                <div class="col-sm-12 col mb-4 menu_settings">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div>
+                                <h4>Opnioes Midiaticas</h4>
+                                <ul id="save_search">
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="dropdown-item" id="a">
+                               TECH TUDO
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="dropdown-item" id="b">
+                                OLHAR DIGITAL
+                            </button>
+                            </li>
+                        <li class="list-group-item">
+                            <button class="dropdown-item" id="c">
+                                TECNOBLOG
+                            </button>
+                            </li>
+                        <li class="list-group-item">
+                            <button class="dropdown-item" id="d">
+                               ISTOE
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id ="tela2">
+
+                    
+
+                    <div class="title">
+                        <h3 class="p-3 mb-2 bg-white text-dark">Art Gifs</h3>
+                    </div>
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row row-cols-1">
+                                    <div class="col mb-4">
+                                    </div>
+                                    <div class="col mb-4">
+                                        <div class="card">
+                                            <img src="images/2.gif" class="card-img-top2" alt="Lionel Messi">
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4">
+                                        <div class="card">
+                                            <img src="images/7.gif" class="card-img-top2" alt="Zlatan Ibrahimović">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row row-cols-1">
+                                    <div class="col mb-4">
+                                        <div class="card">
+                                            <img src="images/3.gif" class="card-img-top2" alt="Paul Pogba e Barcelona Team">
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4">
+                                        <div class="card">
+                                            <img src="images/9.gif" class="card-img-top2" alt="Jürgen Klopp">
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4">
+                                        <div class="card">
+                                            <img src="images/6.gif" class="card-img-top2" alt="João Félix e Cristiano Ronaldo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row row-cols-1">
+                                    <div class="col mb-4">
+                                        <div class="card">
+                                            <img src="images/4.gif" class="card-img-top2" alt="Jürgen Klopp e Josep Guardiola">
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4">
+                                        <div class="card">
+                                            <img src="images/5.gif" class="card-img-top2" alt="Jürgen Klopp">
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4">
+                                        <div class="card">
+                                            <img src="images/8.gif" class="card-img-top2" alt="José Mourinho">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+    </main>
+
+
+
+    <footer class="container footer">
+
+        <div class="row">
+
+            <div class=" col-12 col-sm-12 col-md-12 col-lg-12 border-bottom border-secondary text-center all_footer">
+
+                <div class="row">
+
+
+                    <div class="col-12 col-sm-4 col-md-4 footer_links">
+                        <h4>Quick Links</h4>
+								<a class="nav-link" href="https://www.netflix.com/browser/">NETFLIX</a>
+                                <a class="nav-link" href="https://www.primevideo.com/">AMAZON PRIME</a>
+                                <a class="nav-link" href="https://www.disneyplus.com/pt-br/welcome?cid=DSS-Search-Google-71700000075038498-&s_kwcid=AL!8468!3!479769813057!e!!g!!disney&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpvIBvWzIhI7Lc_IW8N2yhbcKA64bB2149r49wsxbyOuCVUtPb1-_jQaAhVsEALw_wcB">DISNEY +</a>
+                                <a class="nav-link" href="https://globoplay.globo.com/assine/?dclid=&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpvwlOOso4GE0CN7FwnOZZ2AtM0d9fevr-GMdMvZay3NHPnyT34eWcQaAvocEALw_wcB">GLOBOPLAY</a>
+
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4">
+                        <h4>Follow us on</h4>
+                        <div>
+                            <a href="https://www.instagram.com/sofiabhering/?hl=pt-br">
+                                <input type="checkbox" class="menuToggle">
+                                <label for="menuToggle" class="footer-icon">
+                                    <i class="fa fa-instagram"></i>
+                                </label></a>
+                            <a href="https://twitter.com/bhering_sofia">
+                                <input type="checkbox" class="menuToggle">
+                                <label for="menuToggle" class="footer-icon">
+                                    <i class="fa fa-twitter"></i>
+                                </label></a>
+                            <a href="https://www.facebook.com/sofia.francacamposbhering">
+                                <input type="checkbox" class="menuToggle">
+                                <label for="menuToggle" class="footer-icon">
+                                    <i class="fa fa-facebook"></i>
+                                </label></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12">
+                <p class="text-center direitos_autorais">© 2020 POPCORN </p>
+            </div>
+
+        </div>
+
+    </footer>
+    
+
+
+    
+    
+    <script src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

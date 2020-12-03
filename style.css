@@ -1,0 +1,331 @@
+/*icons*/
+.menuToggle {
+  display: none;
+}
+
+.menuToggles {
+  display: none;
+}
+
+.bars-icon {
+  display: none;
+}
+
+/*logo imagem*/
+.logo {
+  width: 100%;
+  max-width: 100px;
+}   
+  
+.logo-area,.footer_logo{
+  text-align: center;
+  margin-bottom: 5px;
+}
+.flag_image{
+  width: 50px;
+  height: 40px;
+}
+
+body{
+  background-color:whitesmoke;
+}
+
+a{
+  color:black;
+}
+
+#btnPesquisa{
+  background-color: none;
+  border-color: rgb(243, 138, 0);
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 5px;
+  border-radius: 25%;
+}
+#txtPesquisa{
+  border-radius: none;
+  margin-left: 20px;
+  height: 40px;
+}
+  
+#btnPesquisa:active{
+  background-color: white;
+}
+  
+#btnPesquisa:hover{
+  background-color: white;
+}
+#save_search > li > button{
+  border:none;
+  background: none;
+}
+#save_search > li > button:hover{
+  outline: none;
+}
+  
+#btnPesquisa:focus{
+  box-shadow: 0 0 0 0.2rem rgba(226, 225, 225, 0.836);
+}
+#l, #m, #n, #k{
+  border:none;
+  background: none;
+}
+.search_title1{
+  padding: 0px;
+}
+#title_men2{
+  display: none;
+}
+.search_title2{
+  padding: 0px 10px 0px 0px;
+}
+
+#save{
+  width: 100%;
+  height: 88%;
+  background-color: rgb(126, 128, 127);
+  color: white;
+  border:  rgb(126, 128, 127);
+}
+#l:hover, #m:hover, #n:hover, #k:hover{
+  outline: none;
+}
+
+.home-icon >i{
+  font-size: 20px;
+}
+
+.menu_header{
+  align-content: center;
+}
+
+.bars-icon > i{
+  font-size: 20px; 
+}
+  
+.menu_area{
+  margin-top: 10px;
+}
+
+.search_area
+a:hover{
+  color: rgb(190, 185, 185);
+}
+
+.menu_nav{
+  display:flex;
+  justify-content: flex-end;
+}
+  
+.menu_mobile {
+  display: none;
+}
+
+header{
+  margin-bottom: 40px;
+}
+
+#exclusive > .title {
+  margin-top: 20px;
+}
+
+#news > .title {
+  margin-top: 20px;
+}
+ 
+#btnPesquisas{
+  border:none;
+  background: none;
+}
+
+#btnPesquisas:hover{
+  outline: none;
+}
+
+#x{
+  color: rgba(118, 121, 118, 0.829);
+  border:none;
+  background: none;
+}
+
+#x:hover{
+  outline: none;
+}
+
+.card-img-top2{
+  width: 100%;
+  height: 150px;
+}
+.carousel-indicators > li {
+  background-color: black;
+}
+
+.carousel-item{
+  margin-bottom: 50px;
+}
+
+.card-img{
+  width: 100%;
+  height: 240px;
+}
+
+#news{
+  margin-top: 20px;
+}
+
+.footer_area > p{
+  margin-top: 30px;
+}
+
+.footer{
+  width: 100%;
+  padding: 50px 5% 15px;
+  margin-top: 20px;
+  background-color:white;
+}
+
+p{
+  text-align: justify;
+}
+
+.footer_links{
+  text-align: center;
+}
+
+.midia_icons_photo{
+  width: 100%;
+  max-width: 60px;
+  height: 40px;
+}
+
+.direitos_autorais{
+  margin-top: 20px;
+  color: rgb(199, 194, 194);
+}
+
+.footer-icon{
+  width: 50px;
+  font-size: 24px;
+}
+
+.footer_image{
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.donation{
+  margin-top: 20px;
+}
+
+.news_text{
+  margin-top: 10px;
+}
+
+.heart-icon{
+  color: red;
+}
+
+.bookmark-icon{
+  color:steelblue;
+}
+
+
+@media screen and (max-width:768px){
+
+    .menu_header> nav >a{
+      display: none;
+    }
+    .menu_settings{
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    .logo-area{
+      margin-bottom: 20px;
+    }
+
+    #btnPesquisa{
+      width: 30px;
+      height: 30px;
+    }
+
+    .menu_header2{
+      flex-direction: row!important;
+    }
+    
+    .menu_nav{
+      display:flex;
+      justify-content: space-between;
+    }
+    .search_area{
+      display:flex;
+      justify-content: space-between;
+      flex-flow: row;
+    }
+    #btnPesquisa{
+      margin-left: 10px;
+    }
+    /*MENU MOBILE*/
+    .menu_mobile {
+      display: none;
+      flex-wrap: wrap;
+      box-shadow: rgba(0, 0, 0, 0.1) 4px 0px 6px 1px;
+      height: 100%;
+      left: 0px;
+      position: fixed;
+      top: 0px;
+      width: 190px;
+      z-index: 1000000140;
+      background: rgb(255, 255, 255);
+      border-radius: 3px;
+      border-right: 1px solid rgb(204, 204, 204);
+      padding: 16px 32px;
+    }
+    .list_mobile {
+      list-style-type: none;
+      margin-top: 20px;
+      padding: 0px;
+    }
+    .home-icon > i {
+      color: rgb(233, 229, 229);
+    }
+    .bars-icon {
+      height: inherit;
+      display: block;
+      z-index: 1000000141;
+    }
+    #menuToggle:checked ~ label i:nth-child(2) {
+      display: block;
+    }
+    #menuToggle:checked ~ label i:first-child {
+      display: none;
+    }
+    #menuToggle:not(:checked) ~ label i:first-child {
+      display: block;
+    }
+    #menuToggle:not(:checked) ~ label i:nth-child(2) {
+      display: none;
+    }
+  
+    #menuToggle:checked ~ div{
+      display: flex;
+    }  
+}
+  
+@media screen and (max-width:480px){
+  .menu_area2{
+    padding: 10px 40px;
+  }
+  .logo-area{
+    margin-bottom: 20px;
+  }
+
+  #btnPesquisa{
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu_header2{
+    flex-direction: row !important;
+  }
+}
